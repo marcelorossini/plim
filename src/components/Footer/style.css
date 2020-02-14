@@ -2,8 +2,9 @@ footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr;				
+    grid-template-rows: 1fr;
 }
+
 .social {
     display: flex;
     justify-self: end;
@@ -13,12 +14,14 @@ footer {
     background: #fff;
     border-radius: 10px;
 }
+
 .social a {
     color: var(--yellow);
     padding: 6px;
 }
-.whatsapp {			
-    align-self: center;			
+
+.whatsapp {
+    align-self: center;
     padding: 0 0 0 50px;
     font-size: 16px;
     color: var(--grey);

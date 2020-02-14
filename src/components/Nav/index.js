@@ -6,23 +6,19 @@ import logo from '../../assets/logo.svg';
 
 export default () => {
   useEffect(() => {
-  
+
   }, []);
 
-  const hideShowMenu = () => {
+  const handleMenu = () => {
     const menu = document.querySelector('.menu');
-    menu.classList.toggle("close");
-  }
-
-  const handleClick = () => {
-    hideShowMenu();
+    menu.classList.toggle("menu-open");
   }
 
   return (
     <nav>
       <img className="logo" src={logo} />
-      <button className="menu-button" onClick={handleClick}><i class="fas fa-bars"></i></button>
-      <ul className="menu close">
+      <button className="menu-button" onClick={handleMenu}><i class="fas fa-bars"></i></button>
+      <ul className="menu">
         <li><Link to="/">HOME</Link></li>
         <li><Link to="/portfolio">PORTFÓLIO</Link></li>
         <li><Link to="/services">SERVIÇOS</Link></li>
