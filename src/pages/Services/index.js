@@ -4,7 +4,7 @@ import './style.css';
 export default () => {
   return (
     <div className="services">
-      services
+      <h1>Serviços</h1>
     </div>
   );
 }
