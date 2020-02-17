@@ -9,6 +9,9 @@ nav {
 
 .logo {
     grid-area: logo;
+    display: contents;
+}
+.logo > img {
     height: 100%;
     align-self: center;
     padding: 10px 0 10px 20px;
@@ -56,6 +59,13 @@ nav {
 .menu-open {
     visibility: inherit;
 }
+.menu-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 @media (min-width: 780px) {
     nav {
@@ -63,7 +73,7 @@ nav {
         grid-template-rows: 1fr;
         grid-template-areas: "logo . menu-button menu";
     }
-    .logo {       
+    .logo > img {       
         padding: 20px 0 20px 50px;
     }
     .menu-button {
@@ -86,5 +96,8 @@ nav {
     .menu>li>a:hover {
         text-decoration: underline;
         background: none;
+    }
+    .menu-wrapper {
+        display: none;
     }
 }

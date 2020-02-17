@@ -10,7 +10,7 @@ export default () => {
 			<div class="social">
 				<a href="https://www.facebook.com/designplim/"><i class="fab fa-facebook-square"></i></a>
 				<a href="https://www.facebook.com/messages/t/designplim"><i class="fab fa-facebook-messenger"></i></a>
-				<a href="https://www.instagram.com/designplim/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.instagram.com/soluplim/"><i class="fab fa-instagram"></i></a>
 			</div>
 		</footer>
 	);
