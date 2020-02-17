@@ -8,21 +8,62 @@ export default () => {
     <div className="portfolio">
       <h1>Portfólio</h1>
       <ul className="images">
-        <li className="item">
-          <img src={m}/>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={m} />
         </li>
-        <li className="item">
-          <img src={c}/>
-        </li>          
-        <li className="item">
-          <img src={c}/>
-        </li>      
-        <li className="item">
-          <img src={c}/>
-        </li>      
-        <li className="item">
-          <img src={c}/>
-        </li>                                    
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>
+        <li>
+          <div className="info">
+            <strong>Ju fotografia</strong>
+            <p>ha muleque</p>
+          </div>
+          <img src={c} />
+        </li>                        
       </ul>
     </div>
   );

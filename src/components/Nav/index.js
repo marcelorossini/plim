@@ -34,6 +34,7 @@ export default () => {
         <li onClick={() => handleMenu(false)}><Link to="/">HOME</Link></li>
         <li onClick={() => handleMenu(false)}><Link to="/portfolio">PORTFÓLIO</Link></li>
         <li onClick={() => handleMenu(false)}><Link to="/services">SERVIÇOS</Link></li>
+        <li onClick={() => handleMenu(false)}><Link to="/about">QUEM SOMOS</Link></li>
         <li onClick={() => handleMenu(false)}><Link to="/contact">CONTATO</Link></li>
       </ul>
       {menuOpen ? (
