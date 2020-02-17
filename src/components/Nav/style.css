@@ -23,7 +23,6 @@ nav {
     background: none;
     border: 0;
     font-size: 30px;
-    color: var(--dark);
     padding: 0 20px;
     cursor: pointer;
 }
@@ -35,7 +34,10 @@ nav {
     background: #fff;
     padding: 0;
     z-index: 100;
+    margin-top: -80px;
     visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear, margin-top 0.1s linear;
 }
 .menu {
     -webkit-box-shadow: 0px 10px 92px 2px rgba(0,0,0,0.2);
@@ -58,6 +60,8 @@ nav {
 
 .menu-open {
     visibility: inherit;
+    opacity: 1;
+    margin-top: 0;
 }
 .menu-wrapper {
     width: 100vw;
@@ -78,6 +82,7 @@ nav {
     }
     .menu-button {
         visibility: hidden;
+        opacity: 1;
     }
     .menu {
         flex-direction: row;
@@ -87,7 +92,9 @@ nav {
         visibility: inherit;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
-        box-shadow: none;        
+        box-shadow: none;  
+        margin-top: 0;   
+        opacity: 1;   
     }
     .menu>li {
         align-self: center;

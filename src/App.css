@@ -19,9 +19,9 @@ html, body {
 body {
     background-image: url(./assets/shape.svg);
     background-repeat: no-repeat;
-    background-attachment: fixed;	
     background-size: 1500px;		
     background-position: calc(100% + 600px) -800px; 
+    color: var(--dark);
 }
 button {
     outline: none;

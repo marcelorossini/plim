@@ -10,7 +10,6 @@
 }
 .portfolio h1 {
   grid-area: title;  
-  color: var(--dark);
   font-size: 42px;
   text-align: center;
   text-shadow: var(--shadow);

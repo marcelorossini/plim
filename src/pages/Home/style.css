@@ -11,7 +11,6 @@
 }
 .home h1 {
   grid-area: title;  
-  color: var(--dark);
   font-size: 42px;
   text-align: center;
   text-shadow: var(--shadow);
@@ -22,7 +21,6 @@
 }		
 .home p {
   grid-area: content;
-  color: var(--dark);
   text-shadow: var(--shadow);
 }
 .home button {
@@ -34,8 +32,8 @@
   border-radius: 50px;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
   color: var(--dark);
+  cursor: pointer;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
