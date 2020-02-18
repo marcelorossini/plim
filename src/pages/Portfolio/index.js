@@ -7,6 +7,7 @@ export default () => {
   return (
     <div className="portfolio">
       <h1>Portfólio</h1>
+      <p>Text</p>
       <ul className="images">
         <li>
           <div className="info">

@@ -24,6 +24,7 @@ nav {
     border: 0;
     font-size: 30px;
     padding: 0 20px;
+    color: var(--dark);
     cursor: pointer;
 }
 

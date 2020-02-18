@@ -6,6 +6,7 @@ export default () => {
   return (
     <div className="contact">
       <h1>Contato</h1>
+      <p>Text</p>
       <form>
         <label>Nome</label>
         <input name="name" type="text"/>
@@ -14,7 +15,7 @@ export default () => {
         <label>Telefone/Celular</label>
         <input name="phone" type="text"/>
         <label>Mensagem</label>
-        <textarea name="message" rows="4"/>
+        <textarea name="message" rows="2"/>
       </form>
       <button>ENVIAR</button>
       <img className="image" src={contact} />

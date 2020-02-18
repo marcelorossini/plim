@@ -1,10 +1,11 @@
 .portfolio {
   display: grid;
   grid-template-areas: "title"
+                       "description"
                        "images"
                        ".";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   row-gap: 30px;
   padding: 0 40px;
 }
