@@ -1,42 +1,45 @@
 import React from 'react';
 import './style.css';
 
-import code from '../../assets/services/code.svg';
-import management from '../../assets/services/management.svg';
-import pen from '../../assets/services/pen.svg';
-import social from '../../assets/services/social.svg';
-import businessCard from '../../assets/services/business-card.svg';
+import socialMedia from '../../assets/social-media.svg';
+import marketing from '../../assets/marketing.svg';
+import bussinessCard from '../../assets/bc.svg';
+import tablet from '../../assets/tablet.svg';
+import code from '../../assets/code.svg';
+import printing from '../../assets/printing.svg';
 
 export default () => {
-  return (
-    <div className="services">
-      <h1>Serviços</h1>
-      <p>Text</p>
-      <div>
-        <ul className="items">
-          <li>
-            <img src={management}/>
-            <strong>Marketing Digital</strong>
-            <p>Gestão de redes sociais e bla bla asdla lal la</p>
-          </li>
-          <li>
-            <img src={pen}/>
-            <strong>Identidade Visual</strong>
-          </li>
-          <li>
-            <img src={social}/>
-            <strong>Gerenciamento de Mídias Sociais</strong>
-          </li>
-          <li>
-            <img src={businessCard}/>
-            <strong>Impressos</strong>
-          </li>    
-          <li>
-            <img src={code}/>
-            <strong>Desenvolvimento de Sites</strong>
-          </li>            
-        </ul>        
-      </div>
-    </div>
-  );
+    return (
+        <section id="services">
+            <h1 className="mark-left">SERVIÇOS</h1>
+            <p>Teste</p>
+            <ul>
+                <li>
+                    <img src={socialMedia} />
+                    <strong>Gestão de Redes Sociais</strong>
+                </li>
+                <li>
+                    <img src={marketing} />
+                    <strong>Marketing Digital</strong>
+                </li>
+                <li>
+                    <img src={bussinessCard} />
+                    <strong>Cartões de Visita</strong>
+                </li>
+                <li>
+                    <img src={tablet} />
+                    <strong>Criação de Identidade visual</strong>
+                </li>
+                <li>
+                    <img src={code} />
+                    <strong>Desenvolvimento de Sites</strong>
+                </li>
+                <li>
+                    <img src={printing} />
+                    <strong>Impressos</strong>
+                </li>
+            </ul>
+            <div className="bottom"></div>
+        </section>
+    )
 }

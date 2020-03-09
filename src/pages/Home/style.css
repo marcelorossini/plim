@@ -1,68 +1,140 @@
-.home {
-  display: grid;
-  grid-template-areas: "title"
-                       "image"
-                       "content"
-                       "button";
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,auto);
-  row-gap: 30px;
-  padding: 0 40px;
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    filter: brightness(20%);
 }
-.home h1 {
-  grid-area: title;  
-  font-size: 42px;
-  text-align: center;
-  text-shadow: var(--shadow);
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "home-animation" "home-content" "home-bottom";
+    color: #fff;
 }
-.home .image {
-  grid-area: image;
-  width: 100%;
-}		
-.home p {
-  grid-area: content;
-  text-shadow: var(--shadow);
+
+#home>* {
+    position: relative;
 }
-.home button {
-  grid-area: button;
-  width: 100%;
-  height: 60px;
-  background: var(--yellow);
-  border: 0;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--dark);
-  cursor: pointer;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
-  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
-}
-.home button:hover { 
-  background: var(--yellow-dark);
+
+#home .home-animation {
+    grid-area: home-animation;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "animation-title animation-title" "animation-text animation-cursor";
+    padding: 120px 0 0 0;
+    justify-self: center;
+    text-align: center;
+    font-size: 48px;
 }
 
 @media (min-width: 780px) {
-  .home {
-    grid-template-areas: "title image"
-                         "content image"
-                         "button image";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    padding: 4vh 50px;
-    gap: 20px;
-  }
-  .home h1 {
-    font-size: 48px;
-    text-align: left;
-  } 
-  .home button {
-    width: 202px;
-  }  
-  .home .image {
+    #home .home-animation {
+        font-size: 64px;
+    }
+}
+
+.animation-title {
+    grid-area: animation-title;
+    font-weight: 100;
+    color: var(--yellow-dark);
+}
+
+.animation-text {
+    grid-area: animation-text;
+    padding: 10px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.animation-text::after {
+    content: "\a0";
+}
+
+.animation-cursor {
+    grid-area: animation-cursor;
+    width: 4px;
+    height: 100%;
+    background: var(--white);
+    animation: cursorFade 1.2s linear infinite;
+}
+
+@keyframes cursorFade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.home-content {
+    grid-area: home-content;
+    justify-self: center;
+    align-self: end;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+@media (min-width: 780px) {
+    .home-content {
+        font-size: 24px;
+    }
+}
+
+.home-bottom {
+    grid-area: home-bottom;
+    height: 140px;
+    display: block;
+    justify-self: center;
+}
+
+@media (min-width: 780px) {
+    .home-bottom {
+        height: 100px;
+        align-self: center;
+    }
+}
+
+.home-bottom a {
     width: 100%;
     height: 100%;
-    justify-self: end;
-    align-self: flex-start;
-  }		
+    color: var(--yellow);
+    animation: homeBottom 3s linear infinite;
 }
+
+@keyframes homeBottom {
+    0% {
+        font-size: 80px;
+    }
+    50% {
+        font-size: 100px;
+    }
+    100% {
+        font-size: 80px;
+    }
+}
+
+/* 
+    .home-bottom {
+      grid-area: home-bottom;
+      width: 0;
+      height: 0;
+      border-right: 98vw solid transparent;
+      border-bottom: 100px solid var(--white);
+    }
+    */

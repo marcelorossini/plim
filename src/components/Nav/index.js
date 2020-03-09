@@ -1,45 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
-
+import React from 'react';
 import './style.css';
+
 import logo from '../../assets/logo.svg';
 
 export default () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  useEffect(() => {
 
-  }, []);
+    const toggleMenu = (bOpenClose = null) => {
+        const menu = document.querySelector(".menu");
 
-  const handleMenu = (open) => {
-    const menu = document.querySelector('.menu');
-    
-    if (typeof open === 'undefined') {
-      open = !menu.classList.contains("menu-open");
+        if (bOpenClose != null) {
+            if (bOpenClose == true) {
+                menu.classList.add('menu-open');
+            } else {
+                menu.classList.remove('menu-open');
+            }
+        } else {
+            menu.classList.toggle('menu-open');
+        }                
     }
 
-    if (open === true) {
-      setMenuOpen(true);
-      menu.classList.add("menu-open");
-    } else if(open === false) {
-      setMenuOpen(false);
-      menu.classList.remove("menu-open");
-    } 
-  }
-
-  return (
-    <nav>
-      <Link to="/" className="logo"><img src={logo} /></Link>
-      <button className="menu-button" onClick={() => handleMenu()}><i class="fas fa-bars"></i></button>
-      <ul className="menu">
-        <li onClick={() => handleMenu(false)}><Link to="/">HOME</Link></li>
-        <li onClick={() => handleMenu(false)}><Link to="/portfolio">PORTFÓLIO</Link></li>
-        <li onClick={() => handleMenu(false)}><Link to="/services">SERVIÇOS</Link></li>
-        <li onClick={() => handleMenu(false)}><Link to="/about">QUEM SOMOS</Link></li>
-        <li onClick={() => handleMenu(false)}><Link to="/contact">CONTATO</Link></li>
-      </ul>
-      {menuOpen ? (
-        <div className="menu-wrapper" on onClick={() => handleMenu(false)}/>
-      ) : null}      
-    </nav>
-  );
+    return (
+        <nav className="menu">
+            <a href="#home" className="menu-logo" onClick={() => toggleMenu(false)}><img src={logo} /></a>
+            <button className="menu-button" onClick={() => toggleMenu()}><i className="fas fa-bars"></i></button>
+            <ul className="menu-items">
+                <li><a href="#home" onClick={() => toggleMenu(false)}>HOME</a></li>
+                <li><a href="#services" onClick={() => toggleMenu(false)}>SERVIÇOS</a></li>
+                <li><a href="#portfolio" onClick={() => toggleMenu(false)}>PORTFÓLIO</a></li>
+                <li><a href="#about" onClick={() => toggleMenu(false)}>QUEM SOMOS</a></li>
+                <li><a href="#contact" onClick={() => toggleMenu(false)}>CONTATO</a></li>
+            </ul>
+        </nav>
+    )
 }

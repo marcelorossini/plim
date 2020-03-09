@@ -1,20 +1,61 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css';
-import home from '../../assets/home.svg';
 
 export default () => {
-  return (
-    <div className="home">
-      <h1>Soluções Criativas</h1>
-      <p>
-      Está precisando divulgar seu trabalho mas não sabe por onde começar?<br/>A gente tem a solução! ;)<br/>
-      <br/>
-      Somos especializados em técnicas de marketing digital para alavancar seus rendimentos, estando presente tanto na criação de sua identidade visual quanto na divulgação de suas campanhas, garantindo o que há de mais atual na área das mídias digitais.<br/>
-      <br/>
-      Aqui não falta criatividade, por isso, atendemos desde pequenos negócios até grandes empreendimentos, inclusive, abrangendo a criação de impressos gráficos e o desenvolvimento de sites.
-      </p>
-      <button>SAIBA MAIS</button>
-      <img className="image" src={home} />
-    </div>
-  );
+    useEffect(() => {
+        // Animação
+        typeWriter(['CRIATIVAS', 'EFICAZES', 'RÁPIDAS', 'EXCLUSIVAS', 'INTELIGENTES', 'OUSADAS'], 0, 0, false);
+    }, []);
+
+    // Animação type
+    const typeWriter = (aTextos, nPosArr, nPosCursor, bReverse) => {
+        const menu = document.querySelector(".animation-text");
+
+        let sText = aTextos[nPosArr];
+        if (!bReverse) {
+            menu.innerHTML += sText.charAt(nPosCursor);
+            nPosCursor++;
+
+            let bCondition = nPosCursor >= sText.length;
+
+            setTimeout(() => typeWriter(aTextos, nPosArr, nPosCursor, bCondition), (bCondition ? getRandomInt(1400, 3600) : getRandomInt(50, 300)));
+        } else {
+            menu.innerHTML = menu.innerHTML.slice(0, -1);
+            nPosCursor--;
+            let bCondition = nPosCursor == 0;
+
+            if (bCondition) {
+                if ((nPosArr + 1) == aTextos.length) {
+                    nPosArr = 0;
+                } else {
+                    nPosArr++;
+                }
+            }
+            setTimeout(() => typeWriter(aTextos, nPosArr, nPosCursor, !bCondition), (bCondition ? 500 : 80));
+        }
+    }
+
+    // Gera número randomico
+    const getRandomInt = (min, max) => {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    return (
+        <section id="home">
+            <div className="home-animation">
+                <small className="animation-title">SOLUÇÕES</small>
+                <div className="animation-text"></div><div className="animation-cursor"></div>
+            </div>
+            <div className="home-content">
+                <p>
+                    Na Plim é assim: nossas ideias, seus resultados.
+                    </p>
+            </div>
+            <div className="home-bottom">
+                <a href="#services"><i className="fas fa-angle-down"></i></a>
+            </div>
+        </section>
+    )
 }
