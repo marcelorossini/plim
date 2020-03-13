@@ -18,7 +18,7 @@ export default () => {
                         <label>Telefone/Celular</label>
                         <input name="phone" type="text" />
                         <label>Mensagem</label>
-                        <textarea name="message" rows="2" />
+                        <textarea name="message" rows="6" />
                     </form>
                     <button>ENVIAR</button>
                 </div>

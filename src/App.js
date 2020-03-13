@@ -41,7 +41,7 @@ export default () => {
   }, [lastScollPos]);
 
   return (
-    <div classNameName="App">
+    <div className="App">
       <Nav />
       <Home />
       <Services />

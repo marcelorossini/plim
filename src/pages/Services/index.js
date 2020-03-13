@@ -13,32 +13,34 @@ export default () => {
         <section id="services">
             <h1 className="mark-left">SERVIÇOS</h1>
             <p>Teste</p>
-            <ul>
-                <li>
-                    <img src={socialMedia} />
-                    <strong>Gestão de Redes Sociais</strong>
-                </li>
-                <li>
-                    <img src={marketing} />
-                    <strong>Marketing Digital</strong>
-                </li>
-                <li>
-                    <img src={bussinessCard} />
-                    <strong>Cartões de Visita</strong>
-                </li>
-                <li>
-                    <img src={tablet} />
-                    <strong>Criação de Identidade visual</strong>
-                </li>
-                <li>
-                    <img src={code} />
-                    <strong>Desenvolvimento de Sites</strong>
-                </li>
-                <li>
-                    <img src={printing} />
-                    <strong>Impressos</strong>
-                </li>
-            </ul>
+            <div className="items">
+                <ul>
+                    <li>
+                        <img src={socialMedia} />
+                        <strong>Gestão de Redes Sociais</strong>
+                    </li>
+                    <li>
+                        <img src={marketing} />
+                        <strong>Marketing Digital</strong>
+                    </li>
+                    <li>
+                        <img src={bussinessCard} />
+                        <strong>Cartões de Visita</strong>
+                    </li>
+                    <li>
+                        <img src={tablet} />
+                        <strong>Criação de Identidade visual</strong>
+                    </li>
+                    <li>
+                        <img src={code} />
+                        <strong>Desenvolvimento de Sites</strong>
+                    </li>
+                    <li>
+                        <img src={printing} />
+                        <strong>Impressos</strong>
+                    </li>
+                </ul>
+            </div>
             <div className="bottom"></div>
         </section>
     )

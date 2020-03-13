@@ -1,11 +1,12 @@
 #portfolio {
     display: grid;
-    grid-template-rows: auto auto 1fr;
-    background: var(--yellow);
+    grid-template-rows: auto auto 1fr auto;
+    background: var(--color-yellow);
 }
 
 #portfolio>h1 {
     justify-self: center;
+    padding: 40px 0 0 0;
 }
 
 #portfolio>p {
@@ -13,12 +14,95 @@
 }
 
 #portfolio h1::before {
-    background: var(--white);
+    background: var(--color-white);
 }
+
+#portfolio .gallery {
+    width: 100%;
+    max-width: var(--max-width);
+    justify-self: center;
+    padding: 80px;
+    align-self: center;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.gallery .images>li {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .images>li>.info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+}
+
+.gallery .images>li>.info:hover {
+    background: #0000009a;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.gallery .images>li>.info>strong {
+    display: block;
+    width: 100%;
+    padding: 0 0 4px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--color-yellow-dark);
+}
+
+.gallery .images>li>.info>p {
+    padding: 4px 0 0 0;
+}
+
+.gallery .images>li>img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 780px) {    
+    #portfolio .gallery {
+        padding: 0px;
+    }
+    .gallery .images>li {
+        width: 25%;
+    }
+}
+
+.gallery button {
+    grid-area: button;
+    width: 100%;
+    height: 60px;
+    background: var(--color-black);
+    border: 0;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-white);
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    margin: 20px 0 0 0;
+}
+
 
 #portfolio .bottom {
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 100px solid var(--black);
+    border-bottom: 100px solid var(--color-black);
 }

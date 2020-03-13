@@ -46,7 +46,9 @@ export default () => {
         <section id="home">
             <div className="home-animation">
                 <small className="animation-title">SOLUÇÕES</small>
-                <div className="animation-text"></div><div className="animation-cursor"></div>
+                <div>
+                    <div className="animation-text"></div><div className="animation-cursor"></div>
+                </div>
             </div>
             <div className="home-content">
                 <p>

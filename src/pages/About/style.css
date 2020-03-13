@@ -1,13 +1,13 @@
 #about {
     display: grid;
     grid-template-rows: auto auto 1fr;
-    background: var(--black);
+    background: var(--color-black);
 }
 
 #about>h1 {
     padding: 40px 80px;
     justify-self: end;
-    color: var(--white);
+    color: var(--color-white);
 }
 
 #about>p {
@@ -17,5 +17,5 @@
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-bottom: 100px solid var(--white);
+    border-bottom: 100px solid var(--color-white);
 }
