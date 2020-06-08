@@ -1,13 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './style.css';
 import { Portfolio } from '../../config';
 
 export default () => {
-    useEffect(() => {
-        
-        
-    }, []);   
-
     return (
         <section id="portfolio">
             <h1>PORTFÓLIO</h1>

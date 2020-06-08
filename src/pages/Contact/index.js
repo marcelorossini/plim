@@ -9,7 +9,7 @@ export default () => {
             <h1 className="mark-left">CONTATO</h1>
             <p>
                 E ai parça, belezinha?<br/>
-
+                <br/>
                 É o seguinte, tá com dúvida sobre algum coisa? Tá com algum problema com nossos trabalhos? Quer conhecer mais sobre a plim? Chama aê que a gente te ajuda
             </p>
             <div>
@@ -27,7 +27,7 @@ export default () => {
                     <button>ENVIAR</button>
                 </div>
                 <div className="image">
-                    <img src={contact} />
+                    <img src={contact} alt=""/>
                 </div>
             </div>
         </section>

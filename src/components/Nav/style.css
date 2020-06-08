@@ -38,11 +38,11 @@
 .menu-items {
     grid-area: menu-items;
     display: none;
-    padding: 18px 0;
+    padding: 16px 0;
 }
 
 .menu-items>li {
-    height: 50px;
+    height: 64px;
 }
 
 .menu-items>li:hover {
@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 12px;
     color: var(--color-dark);
     font-weight: bold;
 }

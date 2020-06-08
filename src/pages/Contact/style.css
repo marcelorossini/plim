@@ -36,9 +36,6 @@
     outline: none;
     font-size: 16px;
     border: 1px solid #e4e4e4;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 #contact button {
@@ -52,9 +49,6 @@
     font-weight: bold;
     color: var(--color-dark);
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
     margin: 20px 0 0 0;
 }
 
@@ -83,14 +77,14 @@
         padding: 0 0 0 80px;
     }
     #contact .form { 
-        align-self: center;
+        padding: 40px 0 0 0;
     }
     #contact .image {
         display: flex;
         width: 100%;
         position: relative;
-        justify-content: flex-end; /* horizontal centering */
-        align-items: center; /* vertical centering */
+        justify-content: flex-end; 
+        align-items: center; 
     }
     #contact .image > img {
         display: block;

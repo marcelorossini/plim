@@ -3,42 +3,42 @@ export const Portfolio = {
         {
             "image": "assets/portfolio/santa.jpg",
             "title": "Santa Bolos",
-            "text": "teste image"
+            "text": ""
         },        
         {
             "image": "assets/portfolio/guilherme.jpg",
             "title": "Guilherme Segura",
-            "text": "teste image"
+            "text": ""
         },
         {
             "image": "assets/portfolio/fran.jpg",
             "title": "Fran Saraiva",
-            "text": "teste image"
+            "text": ""
         },
         {
             "image": "assets/portfolio/recanto.jpg",
             "title": "Recanto dos Grãos",
-            "text": "teste image"
+            "text": ""
         },    
         {
             "image": "assets/portfolio/ivone.jpg",
             "title": "Ivone Rodrigues",
-            "text": "teste image"
+            "text": ""
         },              
         {
             "image": "assets/portfolio/renata.jpg",
             "title": "Renata Jonas",
-            "text": "teste image"
+            "text": ""
         },                      
         {
             "image": "assets/portfolio/dcf.jpg",
             "title": "Del Cassala Fagian",
-            "text": "teste image"
+            "text": ""
         },
         {
             "image": "assets/portfolio/vinny.jpg",
             "title": "Vinny Pizza",
-            "text": "teste image"
+            "text": ""
         }      
     ]
 };
