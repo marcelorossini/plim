@@ -35,8 +35,15 @@ export default () => {
 
             // Para cima
             if (scrollToTop) {
-                const section = document.querySelector(window.location.hash);
-                let sectionPositionTop = section.getBoundingClientRect().top;
+                // Verifica a section atual
+                let section = window.location.hash;
+                let sectionPositionTop = null;
+                // Verifica se está preenchida
+                if (section.length > 0) {
+                    section = document.querySelector(window.location.hash);
+                    sectionPositionTop = section.getBoundingClientRect().top;
+                }
+                // Se não for a home e estiver em outra section
                 if (homePositionTop !== 0 && sectionPositionTop === 0) {
                     menu.classList.remove("fadeIn");
                     menu.classList.add("fadeOut");
