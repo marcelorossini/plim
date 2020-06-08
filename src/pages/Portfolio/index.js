@@ -11,7 +11,7 @@ export default () => {
     return (
         <section id="portfolio">
             <h1>PORTFÓLIO</h1>
-            <p>2</p>
+            <p>Veja alguns de nossos trabalhos</p>
             <div className="gallery">
                 <ul className="images">
                     {Portfolio.data.map((item, key) => (
@@ -20,7 +20,7 @@ export default () => {
                                 <strong>{item.title}</strong>
                                 <p>{item.text}</p>                                
                             </div>       
-                            <img src={item.image} alt=""/>
+                            <img src={require(`../../${item.image}`)} alt=""/>
                         </li>
                     ))}
                 </ul>

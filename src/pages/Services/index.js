@@ -12,32 +12,37 @@ export default () => {
     return (
         <section id="services">
             <h1 className="mark-left">SERVIÇOS</h1>
-            <p>Teste</p>
             <div className="items">
                 <ul>
                     <li>
                         <img src={socialMedia} />
                         <strong>Gestão de Redes Sociais</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                     <li>
                         <img src={marketing} />
                         <strong>Marketing Digital</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                     <li>
                         <img src={bussinessCard} />
                         <strong>Cartões de Visita</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                     <li>
                         <img src={tablet} />
                         <strong>Criação de Identidade visual</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                     <li>
                         <img src={code} />
                         <strong>Desenvolvimento de Sites</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                     <li>
                         <img src={printing} />
                         <strong>Impressos</strong>
+                        <p>aaaaaaaa aaa</p>
                     </li>
                 </ul>
             </div>

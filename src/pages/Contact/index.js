@@ -7,7 +7,11 @@ export default () => {
     return (
         <section id="contact">
             <h1 className="mark-left">CONTATO</h1>
-            <p>2</p>
+            <p>
+                E ai parça, belezinha?<br/>
+
+                É o seguinte, tá com dúvida sobre algum coisa? Tá com algum problema com nossos trabalhos? Quer conhecer mais sobre a plim? Chama aê que a gente te ajuda
+            </p>
             <div>
                 <div className="form">
                     <form>
@@ -26,7 +30,6 @@ export default () => {
                     <img src={contact} />
                 </div>
             </div>
-            <div className="bottom"></div>
         </section>
     )
 }

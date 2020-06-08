@@ -1,34 +1,32 @@
 #contact {
     display: grid;
-    grid-template-rows: auto auto 1fr;    
+    grid-template-rows: auto auto 1fr;
     gap: 20px;
     background: var(--color-white);
 }
+
 #contact>h1 {
-    padding: 40px 0 0 80px;
+    padding: 40px;
 }
 
 #contact>p {
-    padding: 0 80px;
+    padding: 0 40px;
 }
+
 #contact>div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 80px;
+    padding: 40px;
 }
-
-#contact .form {
-    max-width: 400px;
-    align-self: center;
+#contact form {
+    width: 100%;
 }
-
 
 #contact form {
     grid-area: form;
     display: flex;
     flex-direction: column;
-  }
-  #contact form > input, #contact form > textarea {
+}
+
+#contact form>input, #contact form>textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -38,11 +36,12 @@
     outline: none;
     font-size: 16px;
     border: 1px solid #e4e4e4;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);  
-  }
-  #contact button {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+#contact button {
     grid-area: button;
     width: 100%;
     height: 60px;
@@ -53,16 +52,15 @@
     font-weight: bold;
     color: var(--color-dark);
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
     margin: 20px 0 0 0;
-  }
+}
 
-  #contact .image > img {
-      width: 80%;
-
-  }
+#contact .image {
+    display: none;
+}
 
 #contact .bottom {
     width: 0;
@@ -70,4 +68,34 @@
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: 100px solid var(--color-yellow);
+}
+
+@media (min-width: 780px) {
+    #contact>h1 {
+        padding: 40px 0 0 80px;
+    }    
+    #contact>p {
+        padding: 0 80px;
+    }    
+    #contact>div {
+        display: grid;
+        grid-template-columns: 400px auto;
+        padding: 0 0 0 80px;
+    }
+    #contact .form { 
+        align-self: center;
+    }
+    #contact .image {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: flex-end; /* horizontal centering */
+        align-items: center; /* vertical centering */
+    }
+    #contact .image > img {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+    }    
 }

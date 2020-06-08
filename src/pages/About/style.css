@@ -5,7 +5,7 @@
 }
 
 #about>h1 {
-    padding: 40px 80px;
+    padding: 40px;
     justify-self: end;
     color: var(--color-white);
 }
@@ -18,4 +18,10 @@
     height: 0;
     border-right: 100vw solid transparent;
     border-bottom: 100px solid var(--color-white);
+}
+
+@media (min-width: 780px) {    
+    #about>h1 {
+        padding: 40px 80px;
+    }
 }

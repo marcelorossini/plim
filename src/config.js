@@ -1,43 +1,43 @@
 export const Portfolio = {
     "data" : [
         {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
-            "title": "Teste 1",
+            "image": "assets/portfolio/santa.jpg",
+            "title": "Santa Bolos",
+            "text": "teste image"
+        },        
+        {
+            "image": "assets/portfolio/guilherme.jpg",
+            "title": "Guilherme Segura",
             "text": "teste image"
         },
         {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/baboon.png",
-            "title": "Teste 2",
+            "image": "assets/portfolio/fran.jpg",
+            "title": "Fran Saraiva",
             "text": "teste image"
         },
         {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
-            "title": "Teste 3",
+            "image": "assets/portfolio/recanto.jpg",
+            "title": "Recanto dos Grãos",
+            "text": "teste image"
+        },    
+        {
+            "image": "assets/portfolio/ivone.jpg",
+            "title": "Ivone Rodrigues",
+            "text": "teste image"
+        },              
+        {
+            "image": "assets/portfolio/renata.jpg",
+            "title": "Renata Jonas",
+            "text": "teste image"
+        },                      
+        {
+            "image": "assets/portfolio/dcf.jpg",
+            "title": "Del Cassala Fagian",
             "text": "teste image"
         },
         {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
-            "title": "Teste 3",
-            "text": "teste image"
-        },
-        {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
-            "title": "Teste 3",
-            "text": "teste image"
-        },
-        {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/fruits.png",
-            "title": "Teste 3",
-            "text": "teste image"
-        },                        
-        {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
-            "title": "Teste 4",
-            "text": "teste image"
-        },
-        {
-            "image": "https://homepages.cae.wisc.edu/~ece533/images/airplane.png",
-            "title": "Teste 4",
+            "image": "assets/portfolio/vinny.jpg",
+            "title": "Vinny Pizza",
             "text": "teste image"
         }      
     ]
