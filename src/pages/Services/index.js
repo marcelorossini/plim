@@ -6,7 +6,7 @@ import marketing from '../../assets/marketing.svg';
 import bussinessCard from '../../assets/bc.svg';
 import tablet from '../../assets/tablet.svg';
 import code from '../../assets/code.svg';
-import printing from '../../assets/printing.svg';
+import artes from '../../assets/artes.svg';
 
 export default () => {
     return (
@@ -17,32 +17,32 @@ export default () => {
                     <li>
                         <img src={socialMedia} />
                         <strong>Gestão de Redes Sociais</strong>
-                        <p>Marcar presença na internet é fundamental para o sucesso do seu negócio, por isso, a gestão das suas redes sociais xxxxxx xxxxx xxxxxxx xxxxx xx xxxxx xxxxx xxxxx . </p>
+                        <p>A gestão das suas redes sociais, em conjunto com a implementação de estratégias de marketing, garante o crescimento da sua empresa e a captura de novos clientes.</p>
                     </li>
                     <li>
                         <img src={marketing} />
                         <strong>Marketing Digital</strong>
-                        <p>Encontrar o público certo e descobrir a melhor maneira de atraí-los é uma tarefa que exige muita experiência prática . </p>
+                        <p>Através de ferramentas de engajamento, como anúncios patrocinados e publicações impulsionadas, seu negócio se expande pelas mídias e alcança novos horizontes.</p>
                     </li>
                     <li>
-                        <img src={bussinessCard} />
-                        <strong>Cartões de Visita</strong>
-                        <p>Nada mais deselegante que entregar seu contato em um pedaço de papel rasgado, não é mesmo? Os cartões de visita.</p>
+                        <img src={artes} />
+                        <strong>Artes gráficas</strong>
+                        <p>Postagens, folhas timbradas, marcas d' água, wallpapers e outras artes gráficas são de extrema utilidade para o dia a dia comercial.</p>
                     </li>
                     <li>
                         <img src={tablet} />
                         <strong>Criação de Identidade visual</strong>
-                        <p>aaaaaaaa aaa</p>
+                        <p>Com uma identidade visual bem elaborada e marcante, sua marca será facilmente reconhecida, se consolidando no mercado de forma positiva.</p>
                     </li>
                     <li>
                         <img src={code} />
                         <strong>Desenvolvimento de Sites</strong>
-                        <p>aaaaaaaa aaa</p>
+                        <p>Ter um endereço marcado na internet garante melhor posicionamento nos sites de pesquisa, demonstrando maior confiança aos novos clientes.</p>
                     </li>
                     <li>
-                        <img src={printing} />
+                        <img src={bussinessCard} />
                         <strong>Impressos</strong>
-                        <p>aaaaaaaa aaa</p>
+                        <p>Cartões de visita, panfletos e adesivos são a ferramenta perfeita para garantir que seus clientes divulguem seu negócio para outras pessoas.</p>
                     </li>
                 </ul>
             </div>

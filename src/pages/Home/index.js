@@ -18,7 +18,7 @@ export default () => {
 
             let bCondition = nPosCursor >= sText.length;
 
-            setTimeout(() => typeWriter(aTextos, nPosArr, nPosCursor, bCondition), (bCondition ? getRandomInt(1400, 3600) : getRandomInt(50, 300)));
+            setTimeout(() => typeWriter(aTextos, nPosArr, nPosCursor, bCondition), (bCondition ? getRandomInt(800, 1500) : getRandomInt(50, 300)));
         } else {
             menu.innerHTML = menu.innerHTML.slice(0, -1);
             nPosCursor--;

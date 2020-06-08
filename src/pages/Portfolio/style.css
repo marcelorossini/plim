@@ -7,7 +7,7 @@
 #portfolio>h1 {
     justify-self: center;
     padding: 40px 0 0 0;
-    color: var(--color-black);
+    color: var(--color-dark);
 }
 
 #portfolio>p {
@@ -83,7 +83,7 @@
     border-radius: 50px;
     font-size: 18px;
     font-weight: bold;
-    color: var(--color-black);
+    color: var(--color-dark);
     cursor: pointer;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
@@ -95,7 +95,7 @@
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 100px solid var(--color-black);
+    border-bottom: 100px solid var(--color-dark);
 }
 
 
