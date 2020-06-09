@@ -8,8 +8,9 @@
     padding: 40px;
 }
 
-#depoimentos>h1 {
+#depoimentos h1 {
     color: var(--color-dark);
+    padding: 0 0 20px 0;
 }
 
 #depoimentos .main {

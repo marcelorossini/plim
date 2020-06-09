@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: auto auto 1fr auto;    
     background: var(--color-white-light);
+    row-gap: 6px;
 }
 
 #portfolio>h1 {
@@ -18,7 +19,7 @@
 #portfolio .gallery {
     width: 100%;
     max-width: var(--max-width);
-    padding: 40px;
+    padding: 0 40px;
     justify-self: center;
     align-self: center;
 }
@@ -93,13 +94,10 @@
 
 
 @media (min-width: 780px) {    
-    #portfolio>p {
-        padding: 20px;
-    }    
     .gallery .images>li {
         width: 25%;
     }
     .gallery button {
-        max-width: 300px;
+        max-width: 25%;
     }
 }
