@@ -44,7 +44,7 @@ h1 {
   margin-left: -16px;
   width: 10px;
   height: 38px;
-  background: var(--color-yellow);
+  background: var(--color-yellow-dark);
 }
 
 .mark-right::after {
@@ -54,7 +54,7 @@ h1 {
   margin-left: 16px;
   width: 10px;
   height: 38px;
-  background: var(--color-yellow);
+  background: var(--color-yellow-dark);
 }
 
 .app {}

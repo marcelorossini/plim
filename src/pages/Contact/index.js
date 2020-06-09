@@ -5,7 +5,7 @@ import contact from '../../assets/contact.svg';
 
 export default () => {
     return (
-        <section id="contact">
+        <section id="contato">
             <h1 className="mark-left">CONTATO</h1>
             <p>
                 E ai parça, belezinha?<br/>

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
+import CustomerTestimonial from './pages/CustomerTestimonial';
 import Contact from './pages/Contact';
 
 export default () => {
@@ -17,6 +18,7 @@ export default () => {
       <Services />
       <Portfolio />
       <About />
+      <CustomerTestimonial />
       <Contact />
     </div>
   );

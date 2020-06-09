@@ -3,7 +3,7 @@ import './style.css';
 
 export default () => {
     return (
-        <section id="about">
+        <section id="sobre">
             <h1 className="mark-right">QUEM SOMOS</h1>
             <p>3</p>
             <div></div>

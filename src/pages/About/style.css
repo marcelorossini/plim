@@ -1,27 +1,27 @@
-#about {
+#sobre {
     display: grid;
     grid-template-rows: auto auto 1fr;
     background: var(--color-dark);
 }
 
-#about>h1 {
+#sobre>h1 {
     padding: 40px;
     justify-self: end;
     color: var(--color-white);
 }
 
-#about>p {
+#sobre>p {
     padding: 0 80px;
 }
-#about .bottom {
+#sobre .bottom {
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-bottom: 100px solid var(--color-white);
+    border-bottom: 100px solid var(--color-yellow);
 }
 
 @media (min-width: 780px) {    
-    #about>h1 {
+    #sobre>h1 {
         padding: 40px 80px;
     }
 }

@@ -54,7 +54,7 @@ export default () => {
                 <p>Na Plim é assim: nossas ideias, seus resultados.</p>
             </div>
             <div className="home-bottom">
-                <a href="#services"><i className="fas fa-angle-down"></i></a>
+                <a href="#servicos"><i className="fas fa-angle-down"></i></a>
             </div>
         </section>
     )

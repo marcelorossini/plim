@@ -10,7 +10,7 @@ import artes from '../../assets/artes.svg';
 
 export default () => {
     return (
-        <section id="services">
+        <section id="servicos">
             <h1 className="mark-left">SERVIÇOS</h1>
             <div className="items">
                 <ul>
