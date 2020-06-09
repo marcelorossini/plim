@@ -27,7 +27,7 @@ export default () => {
                             <p>
                             Profissional muito atenciosa, dedicada e criativa. Tenho muitos resultados com o trabalho de marketing, as artes são muito bem feitas, nota mil!
                             </p>
-                            <strong>Guilherme Segura Fisioterapia</strong>
+                            <strong>Guilherme Segura - Fisioterapeuta</strong>
                         </div>
                     </div>                        
                     <div className="card">
@@ -47,7 +47,7 @@ export default () => {
                             <p>
                                 Amo o trabalho realizado, as artes são lindas e o atendimento é incrível, super indico e recomendo.
                             </p>
-                            <strong>Ivone Rodrigues Dermopigmentadora</strong>
+                            <strong>Ivone Rodrigues - Dermopigmentadora</strong>
                         </div>
                     </div>                                                                        
                 </div>
