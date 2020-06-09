@@ -22,6 +22,15 @@ export default () => {
                         </div>
                     </div>
                     <div className="card">
+                        <div className="image"><img src={foto4} alt=""/></div>
+                        <div className="bubbly">
+                            <p>
+                            Profissional muito atenciosa, dedicada e criativa. Tenho muitos resultados com o trabalho de marketing, as artes são muito bem feitas, nota mil!
+                            </p>
+                            <strong>Guilherme Segura Fisioterapia</strong>
+                        </div>
+                    </div>                        
+                    <div className="card">
                         <div className="image"><img src={foto2} alt=""/></div>
                         <div className="bubbly">
                             <p>
@@ -40,16 +49,7 @@ export default () => {
                             </p>
                             <strong>Ivone Rodrigues Dermopigmentadora</strong>
                         </div>
-                    </div>
-                    <div className="card">
-                        <div className="image"><img src={foto4} alt=""/></div>
-                        <div className="bubbly">
-                            <p>
-                            Profissional muito atenciosa, dedicada e criativa. Tenho muitos resultados com o trabalho de marketing, as artes são muito bem feitas, nota mil!
-                            </p>
-                            <strong>Guilherme Segura Fisioterapia</strong>
-                        </div>
-                    </div>                                                                            
+                    </div>                                                                        
                 </div>
             </div>
             <div className="bottom"></div>     
