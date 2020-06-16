@@ -40,7 +40,7 @@ h1 {
 
 .mark-left {
   position: relative;
-  left: 26px;
+  left: 18px;
 }
 .mark-left::before {
   content: "";

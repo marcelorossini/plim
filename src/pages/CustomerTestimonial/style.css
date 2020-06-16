@@ -1,16 +1,23 @@
 #depoimentos {    
     display: grid;
     grid-template-rows: 1fr auto;
-    background: var(--color-yellow);
+    background: var(--color-dark);
 }
 
-#depoimentos>.wrapper{
+#depoimentos>.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 40px;    
     padding: 40px;
 }
 
 #depoimentos h1 {
-    color: var(--color-dark);
-    padding: 0 0 20px 0;
+    color: var(--color-white);
+}
+
+#depoimentos>.wrapper .content {
+    justify-self: center;
+    align-self: center;    
 }
 
 #depoimentos .main {
@@ -23,7 +30,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
-    padding: 12px 0;
+    padding: 20px 0;
 }
 
 #depoimentos .card > .image > img {

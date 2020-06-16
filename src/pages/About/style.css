@@ -1,18 +1,18 @@
 #sobre {
     display: grid;
     grid-template-rows: 1fr auto;
-    background: var(--color-dark);
+    background: var(--color-yellow);
 }
 
 #sobre>.wrapper {
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto 1fr;
     row-gap: 40px;
     padding: 40px;
 }
 
 #sobre>.wrapper h1 {
-    color: var(--color-white);
+    color: var(--color-dark);
     text-align: right;
 }
 
@@ -62,7 +62,7 @@
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-bottom: 100px solid var(--color-yellow);
+    border-bottom: 100px solid var(--color-dark);
 }
 
 @media (min-width: 780px) {    
