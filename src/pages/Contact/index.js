@@ -4,6 +4,10 @@ import './style.css';
 import contact from '../../assets/contact.svg';
 
 export default () => {
+    const handleSend = () => {
+        alert();
+    };
+
     return (
         <section id="contato">
             <h1 className="mark-left">CONTATO</h1>
@@ -24,7 +28,7 @@ export default () => {
                         <label>Mensagem</label>
                         <textarea name="message" rows="6" />
                     </form>
-                    <button>ENVIAR</button>
+                    <button onClick={handleSend}>ENVIAR</button>
                 </div>
                 <div className="image">
                     <img src={contact} alt=""/>

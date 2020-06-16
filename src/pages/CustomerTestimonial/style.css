@@ -26,10 +26,6 @@
     padding: 12px 0;
 }
 
-#depoimentos .card > .image {    
-    
-}
-
 #depoimentos .card > .image > img {
     width: 64px;
     border-radius: 100%;
@@ -42,10 +38,11 @@
     background: #fff;
     display: grid;
     grid-template-rows: 1fr auto;
+    color: var(--color-dark);
 }
 
 #depoimentos .bubbly>p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #depoimentos .bubbly>strong {

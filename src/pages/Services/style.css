@@ -39,11 +39,6 @@
   min-height: 140px;
   column-gap: 10px;
   padding: 0 6px;
-  cursor: pointer;
-}
-
-#servicos>.items>ul>li:hover {
-  
 }
 
 #servicos>.items>ul>li>img {

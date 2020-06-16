@@ -37,6 +37,11 @@ h1 {
   font-size: 36px;
 }
 
+
+.mark-left {
+  position: relative;
+  left: 26px;
+}
 .mark-left::before {
   content: "";
   display: block;
@@ -47,6 +52,10 @@ h1 {
   background: var(--color-yellow-dark);
 }
 
+.mark-right {
+  position: relative;
+  right: 26px;
+}
 .mark-right::after {
   content: "";
   display: inline-block;

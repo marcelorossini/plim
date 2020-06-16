@@ -76,7 +76,7 @@ export default () => {
                 <li><a href="#home" onClick={() => toggleButtonMenu(false)}>HOME</a></li>
                 <li><a href="#servicos" onClick={() => toggleButtonMenu(false)}>SERVIÇOS</a></li>
                 <li><a href="#portfolio" onClick={() => toggleButtonMenu(false)}>PORTFÓLIO</a></li>
-                <li><a href="#sobre" onClick={() => toggleButtonMenu(false)}>QUEM SOMOS</a></li>
+                <li><a href="#sobre" onClick={() => toggleButtonMenu(false)}>SOBRE</a></li>
                 <li><a href="#depoimentos" onClick={() => toggleButtonMenu(false)}>DEPOIMENTOS</a></li>
                 <li><a href="#contato" onClick={() => toggleButtonMenu(false)}>CONTATO</a></li>
             </ul>
