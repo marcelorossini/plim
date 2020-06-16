@@ -1,0 +1,86 @@
+#depoimentos {    
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: var(--color-yellow);
+}
+
+#depoimentos>.wrapper{
+    padding: 40px;
+}
+
+#depoimentos h1 {
+    color: var(--color-dark);
+    padding: 0 0 20px 0;
+}
+
+#depoimentos .main {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+#depoimentos .card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    padding: 12px 0;
+}
+
+#depoimentos .card > .image > img {
+    width: 64px;
+    border-radius: 100%;
+}
+
+#depoimentos .bubbly {
+    margin-left: 50px;
+    padding: 20px;
+	position: relative;
+    background: #fff;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    color: var(--color-dark);
+}
+
+#depoimentos .bubbly>p {
+    font-size: 16px;
+}
+
+#depoimentos .bubbly>strong {
+    font-size: 14px;    
+    padding-top: 6px;
+    text-align: right;
+}
+
+#depoimentos .bubbly:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 25px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -25px;
+	margin-left: -50px;
+}
+
+
+#depoimentos .bottom {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 100px solid var(--color-white);
+}
+
+@media (min-width: 780px) {    
+    #depoimentos>.wrapper{
+        padding: 40px 80px;
+    }
+
+    #depoimentos .card > .image > img {
+        width: 100px;
+        border-radius: 100%;
+    }    
+}

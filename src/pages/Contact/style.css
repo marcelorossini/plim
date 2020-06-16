@@ -1,0 +1,89 @@
+#contato {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    background: var(--color-white);
+}
+
+#contato>h1 {
+    padding: 40px;
+}
+
+#contato>p {
+    padding: 0 40px;
+}
+
+#contato .form {
+    padding: 40px;
+}
+
+#contato form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato form>input, #contato form>textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #e4e4e4;
+}
+
+#contato button {
+    grid-area: button;
+    width: 100%;
+    height: 60px;
+    background: var(--color-yellow);
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-dark);
+    cursor: pointer;
+    margin: 20px 0 0 0;
+}
+
+#contato .image {
+    display: none;
+}
+
+#contato .bottom {
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 100px solid var(--color-yellow);
+}
+
+@media (min-width: 780px) {
+    #contato>h1 {
+        padding: 40px 0 0 80px;
+    }    
+    #contato>p {
+        padding: 0 80px;
+    }    
+    #contato>div {
+        display: grid;
+        grid-template-columns: 500px auto;
+    }
+    #contato .form { 
+        padding: 40px 0 0 80px;
+    }
+    #contato .image {
+        display: flex;
+        width: 100%;
+        position: relative;
+        justify-content: flex-end; 
+        align-items: center; 
+    }
+    #contato .image > img {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+    }    
+}
