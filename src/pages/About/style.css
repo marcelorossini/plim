@@ -17,42 +17,61 @@
 }
 
 #sobre>.wrapper p {
-    color: var(--color-white);
+    color: var(--color-dark);
     max-width: var(--max-width);   
     justify-self: center;
     text-align: center;
 }
 
 #sobre>.wrapper .content {
-    justify-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-self: center;    
 }
 
 #sobre .grid {
     display: grid;
+    grid-template-rows: 1fr auto;
+    width: 100%;
+    max-width: var(--max-width);       
+    row-gap: 40px;
+}
+
+#sobre .plim {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#sobre .plim > div > img {
+    width: 100%;
+    
+}
+
+#sobre .people {
+    display: grid;
     grid-template-rows: repeat(4,auto);
     row-gap: 56px;
     width: 100%;
-    max-width: var(--max-width);   
 }
 
-#sobre .grid > .image { 
+#sobre .people > .image { 
     padding-top: 32px;
     justify-self: center;
 }
 
-#sobre .grid > .image > img {
+#sobre .people > .image > img {
     width: 100%;
     border-radius: 100%;
-    border: 8px solid var(--color-yellow-dark);
+    border: 4px solid var(--color-yellow-dark);
 }
 
-#sobre .grid > .info {
-    color: var(--color-white);
+#sobre .people > .info {
+    color: var(--color-dark);
     text-align: center;
 }
 
-#sobre .grid > .info > strong {
+#sobre .people > .info > strong {
     display: block;
     font-size: 22px;
     padding: 6px 0;    
@@ -74,25 +93,26 @@
         text-align: justify;
     }
 
-    #sobre .grid {
-        grid-template-rows: 1fr auto;
-        grid-template-columns: auto 1fr;
-        column-gap: 36px;
+    #sobre .people {
+        grid-template-rows: 1fr;
+        grid-template-columns: auto 1fr auto 1fr;
+        column-gap: 16px;
     }
 
-    #sobre .grid > .image { 
+    #sobre .people > .image { 
         padding-top: 0;
     }    
 
-    #sobre .grid > .image > img {
-        max-width: 200px;
+    #sobre .people > .image > img {
+        max-width: 96px;
     }
 
-    #sobre .grid > .info {
+    #sobre .people > .info {
+        align-self: center;
         text-align: justify;
     }  
     
-    #sobre .grid > .info > strong {
+    #sobre .people > .info > strong {
         font-size: 26px; 
     }     
 }

@@ -11,23 +11,30 @@ export default () => {
             <div className="wrapper">
                 <h1 className="mark-right">SOBRE A PLIM</h1>
                 <div className="content">
-                    <div>
-                        <img src={logo} alt=""/>
-                    </div>
                     <div className="grid">                                       
-                        <div className="image"><img src={imgAryane} alt=""/></div>
-                        <div className="info">
-                            <strong>Aryane Toffetti</strong>
+                        <div className="plim">
+                            <div>
+                                <img src={logo} alt=""/>
+                            </div>      
                             <p>
-                                Designer - CEO                                
-                            </p>
+                            
+                            </p>                      
                         </div>
-                        <div className="image"><img src={imgMarcelo} alt=""/></div>
-                        <div className="info">
-                            <strong>Marcelo Rossini</strong>
-                            <p>
-                                Desenvolvedor - Parceiro
-                            </p>                            
+                        <div className="people">
+                            <div className="image"><img src={imgAryane} alt=""/></div>
+                            <div className="info">
+                                <strong>Aryane Toffetti</strong>
+                                <p>
+                                    Designer - CEO                                
+                                </p>
+                            </div>
+                            <div className="image"><img src={imgMarcelo} alt=""/></div>
+                            <div className="info">
+                                <strong>Marcelo Rossini</strong>
+                                <p>
+                                    Desenvolvedor - Parceiro
+                                </p>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -36,3 +43,7 @@ export default () => {
         </section>
     )
 }
+
+/*
+
+*/
