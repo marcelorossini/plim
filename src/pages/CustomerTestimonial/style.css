@@ -1,7 +1,7 @@
 #depoimentos {    
     display: grid;
     grid-template-rows: 1fr auto;
-    background: var(--color-dark);
+    background: var(--color-black);
 }
 
 #depoimentos>.wrapper {

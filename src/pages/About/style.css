@@ -33,36 +33,38 @@
 
 #sobre .plim {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "plim-logo plim-text" "plim-logo plim-people";
-    column-gap: 64px;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "plim-logo" "plim-text" "plim-people";
+    row-gap: 36px;
 }
 
 #sobre .plim > div {
     grid-area: plim-logo;
+    justify-self: center;
 }
 
 #sobre .plim > div > img {
     width: 100%;
-    min-width: 400px;
+    max-width: 200px;
 }
 
 #sobre .plim > p {
     grid-area: plim-text;
-    align-self: center;
+    align-self: end;
+    text-align: justify;
 }
 
 #sobre .plim > .people {
+    align-self: flex-start;
     grid-area: plim-people;
     display: grid;
     grid-template-rows: repeat(4,auto);
-    row-gap: 56px;
+    row-gap: 36px;
     width: 100%;
 }
 
 #sobre .plim > .people > .image { 
-    padding-top: 32px;
+    max-width: 200px;
     justify-self: center;
 }
 
@@ -80,14 +82,14 @@
 #sobre .plim > .people > .info > strong {
     display: block;
     font-size: 22px;
-    padding: 6px 0;    
+    
 } 
 
 #sobre .bottom {
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-bottom: 100px solid var(--color-dark);
+    border-bottom: 100px solid var(--color-black);
 }
 
 @media (min-width: 780px) {    
@@ -98,7 +100,19 @@
     #sobre>.wrapper p {
         text-align: justify;
     }
+    #sobre .plim {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "plim-logo plim-text" "plim-logo plim-people";
+        column-gap: 64px;
+        row-gap: 36px;
+    }
 
+    #sobre .plim > div > img {
+        width: 400px;
+        max-width: initial;
+    }
+    
     #sobre .plim > .people {
         grid-template-rows: 1fr;
         grid-template-columns: auto 1fr auto 1fr;
@@ -110,12 +124,12 @@
     }    
 
     #sobre .plim > .people > .image > img {
-        max-width: 96px;
+        max-width: 64px;
     }
 
     #sobre .plim > .people > .info {
         align-self: center;
-        text-align: justify;
+        text-align: left;
     }  
     
     #sobre .plim > .people > .info > strong {
