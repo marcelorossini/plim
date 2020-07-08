@@ -31,7 +31,7 @@ export default () => {
                             <div className="info">
                                 <strong>Marcelo Rossini</strong>
                                 <p>
-                                    Desenvolvedor - Parceiro
+                                    Desenvolvedor Parceiro
                                 </p>
                             </div>
                         </div>
