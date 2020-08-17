@@ -12,9 +12,9 @@ export default () => {
         <section id="contato">
             <h1 className="mark-left">CONTATO</h1>
             <p>
-                E ai parça, belezinha?<br/>
+                E aí, pronto para mudar a cara do seu negócio? <br/>
                 <br/>
-                É o seguinte, tá com dúvida sobre algum coisa? Tá com algum problema com nossos trabalhos? Quer conhecer mais sobre a plim? Chama aê que a gente te ajuda
+                Vamos conversar melhor para que você possa esclarecer todas as suas dúvidas e conhecer um pouco mais sobre o nosso trabalho, é só preencher direitinho os campos abaixo!
             </p>
             <div>
                 <div className="form">

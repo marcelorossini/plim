@@ -22,7 +22,7 @@ export default () => {
                             </li>
                         ))}
                     </ul>
-                    <button>VER MAIS</button>
+                    {/*<button>VER MAIS</button>*/}
                 </div>
             </div>
             <div className="bottom"></div>
