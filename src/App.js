@@ -10,6 +10,7 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import CustomerTestimonial from './pages/CustomerTestimonial';
 import Contact from './pages/Contact';
+import Chat from './pages/Chat';
 
 export default () => {
   if (process.env.REACT_APP_MAINTENCE === "true" || false) {
@@ -26,6 +27,7 @@ export default () => {
         <About />
         <CustomerTestimonial />
         <Contact />
+        <Chat />
       </div>
     );
   }

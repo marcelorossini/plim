@@ -79,6 +79,9 @@ export default () => {
                 <li><a href="#sobre" onClick={() => toggleButtonMenu(false)}>SOBRE</a></li>
                 <li><a href="#depoimentos" onClick={() => toggleButtonMenu(false)}>DEPOIMENTOS</a></li>
                 <li><a href="#contato" onClick={() => toggleButtonMenu(false)}>CONTATO</a></li>
+                <li><a href="https://www.facebook.com/designplim/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/soluplim/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5514991814270&text=Ol%C3%A1%2C%20estou%20pronto%20para%20mudar%20a%20cara%20do%20meu%20neg%C3%B3cio!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
         </nav>
     )

@@ -13,17 +13,17 @@
     padding: 0 40px;
 }
 
-#contato .form {
-    padding: 40px;
+#contato>div {
+    padding: 32px;
 }
 
-#contato form {
+.contactForm > form {
     grid-area: form;
     display: flex;
     flex-direction: column;
 }
 
-#contato form>input, #contato form>textarea {
+.contactForm > form > input, .contactForm > form > textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -34,7 +34,7 @@
     border: 1px solid #e4e4e4;
 }
 
-#contato button {
+.contactForm > button {
     grid-area: button;
     width: 100%;
     height: 60px;
@@ -69,8 +69,6 @@
     #contato>div {
         display: grid;
         grid-template-columns: 500px auto;
-    }
-    #contato .form { 
         padding: 40px 0 0 80px;
     }
     #contato .image {

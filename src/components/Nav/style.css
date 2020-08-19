@@ -39,6 +39,7 @@
     grid-area: menu-items;
     display: none;
     padding: 16px 0;
+    box-shadow: inset 0px 0px 32px -5px rgba(0,0,0,0.1);
 }
 
 .menu-items>li {
@@ -59,6 +60,10 @@
     font-weight: bold;
 }
 
+.menu-items a i {
+    font-size: 19px;
+}
+
 @media (min-width: 780px) {
     .menu {
         display: grid;
@@ -71,6 +76,7 @@
     .menu-items {
         display: flex !important;
         padding: 0 36px 0 0;
+        box-shadow: none;
     }
     .menu-items>li {
         height: 100%;
