@@ -1,74 +1,64 @@
 .chat {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: auto 80px;
-    grid-template-areas: "chat chat" "message button";
-    gap: 32px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 10000;
-    margin: 0 32px 32px 0;
-    width: calc(100% - 64px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 80px;
+  grid-template-areas: "chat chat" "message button";
+  gap: 32px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  margin: 0 32px 32px 0;
+  width: calc(100% - 64px);
 }
 
 @media (min-width: 780px) {
-    .chat {
-        width: 320px;
-    }
+  .chat {
+    width: 320px;
+  }
 }
 
 .chat .wrapper {
-    grid-area: chat;
-    width: 100%;
-    background: var(--color-white);
-    padding: 28px;
-    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.2);
-    border-radius: 4px;
-    zoom: .8;
-    display: none;
+  grid-area: chat;
+  width: 100%;
+  background: var(--color-white);
+  padding: 28px;
+  box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  zoom: 0.8;
+  display: none;
 }
-.chat .wrapper > strong {
-    font-size: 28px;
-    color: var(--color-dark);
-}
-
-.chat .wrapper > .contactForm {
-    padding: 24px 0 0 0;
-}
-
-
 
 .chat .wrapper.active {
-    display: block;   
+  display: block;
 }
 
 .chat .message {
-    grid-area: message;
-    font-size: 16px;
-    background: var(--color-white);
-    border-radius: 4px;
-    padding: 14px;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.2);
-    display: none;
+  grid-area: message;
+  font-size: 16px;
+  background: var(--color-white);
+  border-radius: 4px;
+  padding: 14px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .chat .button {
-    grid-area: button;
-    width: 80px;
-    height: 80px;
-    color: var(--color-white);
-    font-size: 32px;
-    background: var(--color-yellow-dark);
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.2);
+  grid-area: button;
+  width: 80px;
+  height: 80px;
+  color: var(--color-white);
+  font-size: 32px;
+  background: var(--color-yellow-dark);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.2);
 }
 
 .chat .button:hover {
-    filter: brightness(95%);
+  filter: brightness(95%);
 }
