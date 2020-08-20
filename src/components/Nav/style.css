@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 80px auto;
-  grid-template-areas: "menu-logo menu-button" "menu-items menu-items";
+  grid-template-areas: "menuLogo menuButton" "menuItems menuItems";
   position: fixed;
   width: 100%;
   background: var(--color-yellow);
@@ -10,22 +10,22 @@
   z-index: 1000;
 }
 
-.menu-open .menu-items {
+.menuOpen .menuItems {
   display: block;
 }
 
-.menu-logo {
-  grid-area: menu-logo;
+.menuLogo {
+  grid-area: menuLogo;
   display: content;
 }
 
-.menu-logo > img {
+.menuLogo > img {
   height: 100%;
   padding: 10px 36px;
 }
 
-.menu-button {
-  grid-area: menu-button;
+.menuButton {
+  grid-area: menuButton;
   background: none;
   border: 0;
   padding: 0 36px;
@@ -35,22 +35,22 @@
   outline: none;
 }
 
-.menu-items {
-  grid-area: menu-items;
+.menuItems {
+  grid-area: menuItems;
   display: none;
   padding: 16px 0;
   box-shadow: inset 0px 0px 32px -5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-items > li {
+.menuItems > li {
   height: 64px;
 }
 
-.menu-items > li:hover {
+.menuItems > li:hover {
   background: var(--color-yellow-dark);
 }
 
-.menu-items a {
+.menuItems a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@
   font-weight: bold;
 }
 
-.menu-items a i {
+.menuItems a i {
   font-size: 19px;
 }
 
@@ -68,17 +68,17 @@
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
-    grid-template-areas: "menu-logo menu-button menu-items";
+    grid-template-areas: "menuLogo menuButton menuItems";
   }
-  .menu-button {
+  .menuButton {
     display: none;
   }
-  .menu-items {
+  .menuItems {
     display: flex !important;
     padding: 0 36px 0 0;
     box-shadow: none;
   }
-  .menu-items > li {
+  .menuItems > li {
     height: 100%;
   }
 }

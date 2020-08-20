@@ -10,12 +10,12 @@ export default () => {
 
     if (bOpenClose != null) {
       if (bOpenClose === true) {
-        menu.classList.add("menu-open");
+        menu.classList.add("menuOpen");
       } else {
-        menu.classList.remove("menu-open");
+        menu.classList.remove("menuOpen");
       }
     } else {
-      menu.classList.toggle("menu-open");
+      menu.classList.toggle("menuOpen");
     }
   };
 
@@ -62,6 +62,7 @@ export default () => {
         }
       }
       setLastScollPos(homePositionTop);
+      toggleButtonMenu(false)
     };
     // Esconde/Mostra o menu no Scroll
     window.addEventListener("scroll", showHideNav, { passive: true });
@@ -72,15 +73,15 @@ export default () => {
     <nav className="menu">
       <a
         href="#home"
-        className="menu-logo"
+        className="menuLogo"
         onClick={() => toggleButtonMenu(false)}
       >
         <img src={logo} alt="" />
       </a>
-      <button className="menu-button" onClick={() => toggleButtonMenu()}>
+      <button className="menuButton" onClick={() => toggleButtonMenu()}>
         <i className="fas fa-bars"></i>
       </button>
-      <ul className="menu-items">
+      <ul className="menuItems">
         <li>
           <a href="#home" onClick={() => toggleButtonMenu(false)}>
             HOME

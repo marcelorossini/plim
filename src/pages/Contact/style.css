@@ -23,12 +23,6 @@
   flex-direction: column;
 }
 
-.contactForm > .title {
-  font-size: 28px;
-  color: var(--color-dark);
-  padding: 0 0 24px 0;
-}
-
 .contactForm > form {
   width: 100%;
   grid-area: form;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 
+import Loading from "../../components/Loading";
 import InputMask from "react-input-mask";
 import EmailJs from "emailjs-com";
 
@@ -29,8 +30,9 @@ export default () => {
 
 export const ContactForm = (props) => {
   const [sended, setSended] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     // Não recarrega pagina
     e.preventDefault();
 
@@ -48,14 +50,18 @@ export const ContactForm = (props) => {
 
     // Marca como enviado
     setSended(true);
+    setLoading(true);
 
     // Envia email
-    EmailJs.send(
+    await EmailJs.send(
       "default_service",
       process.env.REACT_APP_EMAILJS_TEMPLATE,
       param,
       process.env.REACT_APP_EMAILJS_ID
     );
+
+    // Finaliza loading
+    setLoading(false);
   };
 
   const handleValidation = (e) => {
@@ -100,7 +106,7 @@ export const ContactForm = (props) => {
   const handleFieldError = (el, message = null) => {
     // Label
     const label = document.querySelector(
-      `${props.chat ? '.chat' : ''} .contactForm > form > .${el.name}Error`
+      `${props.chat ? ".chat" : ""} .contactForm > form > .${el.name}Error`
     );
 
     // Limpa campo
@@ -116,47 +122,44 @@ export const ContactForm = (props) => {
   };
 
   return (
-    <div className="contactForm">
-      {!sended ? (
-        <>
-          {props.chat ? (
-            <strong className="title">
-              E aí, pronto para mudar a cara do seu negócio?
+    <Loading loading={loading}>
+      <div className="contactForm">
+        {!sended ? (
+          <>
+            <form onSubmit={handleSubmit}>
+              <label>Nome</label>
+              <InputMask
+                mask={"a".repeat(100)}
+                maskPlaceholder=" "
+                name="name"
+                type="text"
+              />
+              <p className="nameError"></p>
+              <label>Email</label>
+              <input name="email" type="text" />
+              <p className="emailError"></p>
+              <label>Telefone/Celular</label>
+              <InputMask
+                mask="(99) 999999999"
+                maskPlaceholder=" "
+                name="phone"
+                type="text"
+              />
+              <p className="phoneError"></p>
+              <label>Mensagem</label>
+              <textarea name="message" rows="6" />
+              <p className="messageError"></p>
+              <button type="submit">ENVIAR</button>
+            </form>
+          </>
+        ) : (
+          <div className="confirmation">
+            <strong>
+              Obrigado por escolher a Plim, logo entraremos em contato com você!
             </strong>
-          ) : null}
-          <form onSubmit={handleSubmit}>
-            <label>Nome</label>
-            <InputMask
-              mask={"a".repeat(100)}
-              maskPlaceholder=" "
-              name="name"
-              type="text"
-            />
-            <p className="nameError"></p>
-            <label>Email</label>
-            <input name="email" type="text" />
-            <p className="emailError"></p>
-            <label>Telefone/Celular</label>
-            <InputMask
-              mask="(99) 999999999"
-              maskPlaceholder=" "
-              name="phone"
-              type="text"
-            />
-            <p className="phoneError"></p>
-            <label>Mensagem</label>
-            <textarea name="message" rows="6" />
-            <p className="messageError"></p>
-            <button type="submit">ENVIAR</button>
-          </form>
-        </>
-      ) : (
-        <div className="confirmation">
-          <strong>
-            Obrigado por escolher a Plim, logo entraremos em contato com você!
-          </strong>
-        </div>
-      )}
-    </div>
+          </div>
+        )}
+      </div>
+    </Loading>
   );
 };
