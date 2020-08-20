@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-
 import logo from "../../assets/logo.svg";
+import { fadeIn, fadeOut } from "../../helpers";
 
 export default () => {
   // Abre/Fecha menu
@@ -44,21 +44,21 @@ export default () => {
           sectionPositionTop = section.getBoundingClientRect().top;
         }
         // Se não for a home e estiver em outra section
-        if (homePositionTop !== 0 && sectionPositionTop === 0) {
-          menu.classList.remove("fadeIn");
-          menu.classList.add("fadeOut");
+        if (
+          homePositionTop !== 0 &&
+          sectionPositionTop > -5 &&
+          sectionPositionTop < 5
+        ) {
+          fadeOut(menu);
         } else {
-          menu.classList.remove("fadeOut");
-          menu.classList.add("fadeIn");
+          fadeIn(menu);
         }
         // Para Baixo
       } else {
         if (homePositionTop < -80) {
-          menu.classList.remove("fadeIn");
-          menu.classList.add("fadeOut");
+          fadeOut(menu);
         } else {
-          menu.classList.remove("fadeOut");
-          menu.classList.add("fadeIn");
+          fadeIn(menu);
         }
       }
       setLastScollPos(homePositionTop);
@@ -112,12 +112,20 @@ export default () => {
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/designplim/" target="_blank">
+          <a
+            href="https://www.facebook.com/designplim/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-facebook-square"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/soluplim/" target="_blank">
+          <a
+            href="https://www.instagram.com/soluplim/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-instagram"></i>
           </a>
         </li>
@@ -125,6 +133,7 @@ export default () => {
           <a
             href="https://api.whatsapp.com/send?phone=5514991814270&text=Ol%C3%A1%2C%20estou%20pronto%20para%20mudar%20a%20cara%20do%20meu%20neg%C3%B3cio!"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fab fa-whatsapp"></i>
           </a>

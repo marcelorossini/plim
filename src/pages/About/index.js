@@ -46,22 +46,3 @@ export default () => {
     </section>
   );
 };
-
-/*
-                        <div className="people">
-                            <div className="image"><img src={imgAryane} alt=""/></div>
-                            <div className="info">
-                                <strong>Aryane Toffetti</strong>
-                                <p>
-                                    Designer - CEO
-                                </p>
-                            </div>
-                            <div className="image"><img src={imgMarcelo} alt=""/></div>
-                            <div className="info">
-                                <strong>Marcelo Rossini</strong>
-                                <p>
-                                    Desenvolvedor - Parceiro
-                                </p>
-                            </div>
-                        </div>
-*/

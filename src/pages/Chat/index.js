@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 
+import { getSectionAtPosition, fadeIn, fadeOut } from "../../helpers";
 import { ContactForm } from "../Contact";
 
 export default () => {
-  const [formShow, setFormShow] = useState(false);
+  // Use effect
+  useEffect(() => {
+    // Esconde/Mostra botão
+    const showHideButton = () => {
+      const atualSection = getSectionAtPosition();
+      const button = document.querySelector('.chat > .button');
+
+      if (atualSection !== "contato")
+        fadeIn(button);
+      else 
+        fadeOut(button);
+    };
+
+    // OnScroll
+    window.addEventListener("scroll", showHideButton, { passive: true });
+    return () => window.removeEventListener("scroll", showHideButton);
+  }, []);
+
+  // Abre chat
   const handleChat = () => {
     const chat = document.querySelector(".chat > .wrapper");
     chat.classList.toggle("active");
