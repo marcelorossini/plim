@@ -37,6 +37,14 @@ h1 {
   font-size: 36px;
 }
 
+button {
+  filter: brightness(100%);
+  transition: .2s filter;
+}
+
+button:hover {
+  filter: brightness(92%);
+}
 
 .mark-left {
   position: relative;

@@ -10,6 +10,7 @@
 }
 
 #contato > p {
+  color: var(--color-dark);
   padding: 0 40px;
 }
 
@@ -28,10 +29,6 @@
   padding: 0 0 24px 0;
 }
 
-.contactForm > .title.hidden {
-  display: none;
-}
-
 .contactForm > form {
   width: 100%;
   grid-area: form;
@@ -39,8 +36,13 @@
   flex-direction: column;
 }
 
-.contactForm > form.hidden {
-  display: none;
+.contactForm > form > label.error {
+  color: #e74c3c;
+}
+
+.contactForm > form > p {
+  color: #e74c3c;
+  text-align: right;
 }
 
 .contactForm > form > input,
@@ -54,6 +56,12 @@
   font-size: 16px;
   border: 1px solid #e4e4e4;
   resize: none;
+  color: var(--color-dark);
+}
+
+.contactForm > form > input.error,
+.contactForm > form > textarea.error {
+  border: 1px solid #e74c3c;
 }
 
 .contactForm > form > button {
@@ -84,14 +92,6 @@
 
 .contactForm > .confirmation {
   margin: auto;
-}
-
-.contactForm > .confirmation.hidden {
-  display: none;
-}
-
-.contactForm > .confirmation > i {
-  font-size: 180px;
 }
 
 .contactForm > .confirmation > strong {

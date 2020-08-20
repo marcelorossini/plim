@@ -5,7 +5,6 @@ import { getSectionAtPosition, fadeIn, fadeOut } from "../../helpers";
 import { ContactForm } from "../Contact";
 
 export default () => {
-  // Use effect
   useEffect(() => {
     // Esconde/Mostra botão
     const showHideButton = () => {
@@ -32,11 +31,11 @@ export default () => {
   return (
     <div className="chat">
       <div className="wrapper">
-        <ContactForm showTitle />
+        <ContactForm chat />
       </div>
       <div className="message">Oii, tem alguem ai? asdasd</div>
       <button className="button" onClick={() => handleChat()}>
-        <i class="fas fa-comment-alt"></i>
+        <i className="fas fa-comment-alt"></i>
       </button>
     </div>
   );

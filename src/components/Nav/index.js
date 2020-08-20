@@ -117,7 +117,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
           </a>
         </li>
         <li>
@@ -126,7 +126,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </li>
         <li>
@@ -135,7 +135,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-whatsapp"></i>
+            <i className="fab fa-whatsapp"></i>
           </a>
         </li>
       </ul>

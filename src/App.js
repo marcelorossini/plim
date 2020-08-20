@@ -19,7 +19,7 @@ export default () => {
     )
   } else {
     return (
-      <div className="App">
+      <>
         <Nav />
         <Home />
         <Services />
@@ -27,8 +27,8 @@ export default () => {
         <About />
         <CustomerTestimonial />
         <Contact />
-        <Chat />
-      </div>
+        <Chat />      
+      </>
     );
   }
 }
