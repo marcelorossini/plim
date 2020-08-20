@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import EmailJs from "emailjs-com";
 
-import contact from "../../assets/contact.svg";
+import contact from "../../assets/contact/bg.svg";
 
 export default () => {
   return (

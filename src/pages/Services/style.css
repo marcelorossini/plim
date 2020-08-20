@@ -54,6 +54,11 @@
 }
 
 #servicos .bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+#servicos .bottom > div {
   height: 100px;
   border-left: 50vw solid var(--color-white-light);
   border-right: 50vw solid var(--color-white-light);

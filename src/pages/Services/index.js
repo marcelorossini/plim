@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-import socialMedia from "../../assets/social-media.svg";
-import marketing from "../../assets/marketing.svg";
-import bussinessCard from "../../assets/bc.svg";
-import tablet from "../../assets/tablet.svg";
-import code from "../../assets/code.svg";
-import artes from "../../assets/artes.svg";
+import socialMedia from "../../assets/services/social-media.svg";
+import marketing from "../../assets/services/marketing.svg";
+import bussinessCard from "../../assets/services/bc.svg";
+import tablet from "../../assets/services/tablet.svg";
+import code from "../../assets/services/code.svg";
+import artes from "../../assets/services/artes.svg";
 
 export default () => {
   return (
@@ -72,7 +72,7 @@ export default () => {
           </ul>
         </div>
       </div>
-      <div className="bottom"></div>
+      <div className="bottom"><div/></div>
     </section>
   );
 };

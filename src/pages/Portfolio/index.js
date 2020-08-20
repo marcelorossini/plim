@@ -71,7 +71,7 @@ export default () => {
           )}
         </div>
       </div>
-      <div className="bottom"></div>
+      <div className="bottom"><div/></div>
     </section>
   );
 };

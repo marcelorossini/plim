@@ -74,6 +74,11 @@
 }
 
 #depoimentos .bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+#depoimentos .bottom > div {
   width: 0;
   height: 0;
   border-right: 100vw solid transparent;

@@ -116,6 +116,11 @@
 }
 
 #portfolio .bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+#portfolio .bottom > div {
   width: 0;
   height: 0;
   border-left: 100vw solid transparent;

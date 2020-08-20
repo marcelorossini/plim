@@ -85,6 +85,11 @@
 }
 
 #sobre .bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+#sobre .bottom > div {
   width: 0;
   height: 0;
   border-right: 100vw solid transparent;
