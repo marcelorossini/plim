@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import "./style.css";
 
 export default (props) => {
-  const [showLoading, setShowLoading] = useState(props.loading || false);
-
   return (
     <>
-      {showLoading ? (
+      {props.loading || false ? (
         <div className="loading">
           <i className="fas fa-circle-notch fa-spin"></i>
         </div>

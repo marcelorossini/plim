@@ -6,6 +6,7 @@ import { ContactForm } from "../Contact";
 
 export default () => {
   const [chatOpen, setChatOpen] = useState(false);
+  const [showTitle, setShowTitle] = useState(true);
 
   useEffect(() => {
     // Esconde/Mostra botão
@@ -27,17 +28,23 @@ export default () => {
     setChatOpen(openClose !== null ? openClose : !chatOpen);
   };
 
+  const handleTitle = () => {
+    setShowTitle(false);
+  }
+
   return (
     <div className="chat">
       {chatOpen ? (
         <div className="wrapper">
-          <div className="title">
-            <strong>E aí, pronto para mudar a cara do seu negócio?</strong>
-            <button onClick={() => handleChat(false)}>
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <ContactForm chat />
+          {showTitle ? (
+            <div className="title">
+              <strong>E aí, pronto para mudar a cara do seu negócio?</strong>
+              <button onClick={() => handleChat(false)}>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          ) : null}
+          <ContactForm chat handleTitle={handleTitle} />
         </div>
       ) : null}
       <div className="message">Oii, tem alguem ai? asdasd</div>

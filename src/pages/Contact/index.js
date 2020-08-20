@@ -32,7 +32,7 @@ export const ContactForm = (props) => {
   const [sended, setSended] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     // Não recarrega pagina
     e.preventDefault();
 
@@ -48,20 +48,27 @@ export const ContactForm = (props) => {
       message: message.value,
     };
 
-    // Marca como enviado
-    setSended(true);
+    // Marca como enviado    
     setLoading(true);
 
     // Envia email
-    await EmailJs.send(
+    EmailJs.send(
       "default_service",
       process.env.REACT_APP_EMAILJS_TEMPLATE,
       param,
       process.env.REACT_APP_EMAILJS_ID
+    ).then(
+      (response) => {
+        setLoading(false);
+        setSended(true);
+        props.handleTitle();
+      },
+      (error) => {
+        setLoading(false);
+        setSended(true);
+        props.handleTitle();
+      }
     );
-
-    // Finaliza loading
-    setLoading(false);
   };
 
   const handleValidation = (e) => {
