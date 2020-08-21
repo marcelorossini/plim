@@ -10,43 +10,52 @@ export default () => {
 
   useEffect(() => {
     // Esconde/Mostra botão
-    const showHideButton = () => {
+    const showHideChat = () => {
+      // Variáveis auxiliares
       const atualSection = getSectionAtPosition();
-      const button = document.querySelector(".chat > .button");
+      const chat = document.querySelector(".chat");
 
-      if (atualSection !== "contato") fadeIn(button);
-      else fadeOut(button);
+      // Se estiver na pagina de contato, esconde
+      if (atualSection !== "contato") fadeIn(chat);
+      else fadeOut(chat);
     };
 
     // OnScroll
-    window.addEventListener("scroll", showHideButton, { passive: true });
-    return () => window.removeEventListener("scroll", showHideButton);
+    window.addEventListener("scroll", showHideChat, { passive: true });
+    return () => window.removeEventListener("scroll", showHideChat);
   }, []);
 
   // Abre chat
   const handleChat = (openClose = null) => {
+    // Define estado do chat
     setChatOpen(openClose !== null ? openClose : !chatOpen);
+    // Exibe o titulo
+    setShowTitle(true);
   };
 
-  const handleTitle = () => {
+  // Ao finalizar o envio
+  const handleSended = () => {
+    // Esconde o titulo
     setShowTitle(false);
-  }
+    // Aguarda 3 segundo e esconde
+    setTimeout(() => {
+      handleChat(false);
+    }, 3000);
+  };
 
   return (
     <div className="chat">
-      {chatOpen ? (
-        <div className="wrapper">
-          {showTitle ? (
-            <div className="title">
-              <strong>E aí, pronto para mudar a cara do seu negócio?</strong>
-              <button onClick={() => handleChat(false)}>
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          ) : null}
-          <ContactForm chat handleTitle={handleTitle} />
-        </div>
-      ) : null}
+      <div className={`wrapper ${chatOpen ? 'active' : ''}`}>
+        {showTitle ? (
+          <div className="title">
+            <strong>E aí, pronto para mudar a cara do seu negócio?</strong>
+            <button onClick={() => handleChat(false)}>
+              <i className="fas fa-times"></i>
+            </button>
+          </div>
+        ) : null}
+        <ContactForm chat handleSended={handleSended} />
+      </div>
       <div className="message">Oii, tem alguem ai? asdasd</div>
       <button className="button" onClick={() => handleChat()}>
         <i className="fas fa-comment-alt"></i>

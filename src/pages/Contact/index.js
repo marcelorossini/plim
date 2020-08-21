@@ -48,7 +48,7 @@ export const ContactForm = (props) => {
       message: message.value,
     };
 
-    // Marca como enviado    
+    // Marca como enviado
     setLoading(true);
 
     // Envia email
@@ -59,16 +59,27 @@ export const ContactForm = (props) => {
       process.env.REACT_APP_EMAILJS_ID
     ).then(
       (response) => {
-        setLoading(false);
-        setSended(true);
-        props.handleTitle();
+        handleFinalize();
       },
       (error) => {
-        setLoading(false);
-        setSended(true);
-        props.handleTitle();
+        handleFinalize();
       }
     );
+  };
+
+  const handleFinalize = () => {
+    // Desativa o loading
+    setLoading(false);
+    // Marca como enviado
+    setSended(true);
+    // Chama a função do chat
+    if (props.handleSended) props.handleSended();
+    // Resta para o status inicial
+    if (props.chat) {
+      setTimeout(() => {
+        setSended(false);
+      }, 3500);
+    }
   };
 
   const handleValidation = (e) => {
