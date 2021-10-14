@@ -28,18 +28,16 @@
 
 #servicos .items > ul > li {
   display: grid;
-  grid-template-columns: minmax(1fr, 140px) 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "card-image card-title" "card-image card-text";
-  min-height: 140px;
   gap: 10px;
   color: var(--color-dark);
 }
 
 #servicos .items > ul > li > img {
   grid-area: card-image;
-  height: 100%;
-  max-width: 140px;
+  height: 90px;
   justify-self: center;
 }
 
@@ -69,6 +67,17 @@
   #servicos > .wrapper {
     padding: 40px 80px;
   }
+
+  #servicos .items > ul > li > p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  #servicos .items > ul > li > img {
+    height: 110px;
+  }
+
   #servicos .items > ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
