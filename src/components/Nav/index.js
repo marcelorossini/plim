@@ -93,7 +93,7 @@ export default () => {
           </a>
         </li>
         <li>
-          <a href="#portfolio" onClick={() => toggleButtonMenu(false)}>
+          <a href="https://www.behance.net/aryanetoffetti" target="_blank">
             PORTFÓLIO
           </a>
         </li>
