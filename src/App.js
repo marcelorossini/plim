@@ -23,7 +23,7 @@ export default () => {
         <Nav />
         <Home />
         <Services />
-        <Portfolio />
+        {/*<Portfolio />*/}        
         <About />
         <CustomerTestimonial />
         <Contact />
